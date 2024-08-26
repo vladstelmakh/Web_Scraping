@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Edit Product</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form method="POST">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" name="Title" class="form-control" value="{{ product['Title'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input type="text" name="Price" class="form-control" value="{{ product['Price'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" name="Description" class="form-control" value="{{ product['Description'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" name="Company" class="form-control" value="{{ product['Company'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="text" name="Date" class="form-control" value="{{ product['Date'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Link</label>
+                        <input type="text" name="Link" class="form-control" value="{{ product['Link'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label>Image URL</label>
+                        <input type="text" name="Image URL" class="form-control" value="{{ product['Image URL'] }}">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
